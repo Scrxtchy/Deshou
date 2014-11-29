@@ -826,7 +826,7 @@
 
 		place { control="subnavgroup_library" align=top-center y=50 height=28 width=max margin-right=-2 margin-left=8 }
 		
-		place { control="URLStatusImage,EVCert,URLBar" align=left y=54 height=20 width=max spacing=5 margin-left=7 }
+		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=54 height=20 width=max spacing=5 margin-left=7 }
  	
 		place { control="library_search"  width=112 }	
 

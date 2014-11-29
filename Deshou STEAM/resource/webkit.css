@@ -1,8 +1,8 @@
 @font-face {
     font-family: HaxrCorp;
-    src: url('http://5crat.ch/haxr/haxrcorpttf.ttf');
+    src: url('http://5crat.ch/haxr/AndroidEmoji.ttf');
 }
-* {
+  {
 	font-family: HaxrCorp !important;
 	}
 	

@@ -760,7 +760,7 @@
 		
 		AccountURLStyle
 		{
-		  textcolor=textdisabled
+		  textcolor=transparent
 		  padding-top=-4
 		}
 		

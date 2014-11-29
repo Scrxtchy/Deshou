@@ -8,12 +8,12 @@ steam.styles
    // FORMAT THE FOLLOWING VALUES TO SET YOUR CUSTOM COLOURS!
 
    baseBackground="27 27 27 255"
-   baseLight="204 202 202 255"
-   baseDark="45 45 45 255"
-   baseHighlight="217 191 194 255"
-   baseOnline="217 191 194 255"
-   baseInGame="169 141 155 255"
-   baseDisabled="78 78 78 255"
+   baseLight="252 252 252 255"
+   baseDark="110 110 110 255"
+   baseHighlight="204 221 238 255"
+   baseOnline="204 221 238 255"
+   baseInGame="102 119 136 255"
+   baseDisabled="72 77 81 255"
 
    basefont="HaxrCorp S8"
    basefont="HaxrCorpTTF" [$OSX]
@@ -26,8 +26,8 @@ steam.styles
    // THESE ARE VALUES WHICH REQUIRE TRANSPARENCY!
 
    DarkClientBGTransparent="27 27 27 19"
-   DarkDialogBGTransparent="27 27 27 170"
 
+   DarkDialogBGTransparent="27 27 27 170"
    InGameColour192="169 141 155 192"
    OnlineColour192="217 191 194 192"
 
