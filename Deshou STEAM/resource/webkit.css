@@ -1,15 +1,5 @@
-@font-face {
-    font-family: HaxrCorp;
-    src: url('http://5crat.ch/haxr/AndroidEmoji.ttf');
-}
-  {
-	font-family: HaxrCorp !important;
-	}
-	
-	
 body{
     background: #1B1B1B !important;
-	background-image: none !important;
 	}
     
 ::-webkit-scrollbar,
@@ -82,5 +72,5 @@ body{
 
 	width: 0px;
 	/* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJCAYAAAD6reaeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAENJREFUeNpiSE6I+w8EDMiYycfXnyElMf4/AxJgAhHoEkwwBrIEE7I2mASK4JbNGxnmzF/IyIQuANeOLAAG2NwJEGAAuVg0Qtlxn1kAAAAASUVORK5CYII=);
-*/
 	}
+*/

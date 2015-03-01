@@ -82,7 +82,6 @@
 		{
 			"ControlName"		"MenuButton"
 			"fieldName"		"account_url"
-			"labelText"		"#Steam_Account_Name"
 			style="AccountURLStyle"
 		}
 		
@@ -760,7 +759,7 @@
 		
 		AccountURLStyle
 		{
-		  textcolor=transparent
+		  textcolor=none
 		  padding-top=-4
 		}
 		
