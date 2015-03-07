@@ -3,8 +3,8 @@
 	controls
 	{
 		StatusDownloading { controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
-		StatusPaused{ controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
-		StatusComplete { controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
+		StatusPaused	{ controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
+		StatusComplete 	{ controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
 		StatusProgressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 } 
 	}
 	

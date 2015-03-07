@@ -85,17 +85,7 @@
 		ManageGuestPasses				{	text="#Steam_ManageGuestPasses"			command="ManageGuestPasses" }
 		AddShortcut						{	text="#Steam_menu_AddShortcut"			shellcmd="steam://AddNonSteamGame" }
 	}
-	DATABASE
-	{
-		text="DATABASE"
-		
-		DATABASE						{	text="DATABASE"							shellcmd="steam://url/FacebookProfilePage"}
-		DATABASE						{	text="DATABASE"							shellcmd="steam://url/GroupSteamIDPage/103582791434298690" }
-		LVING							{	text="LIVING IN THE"					shellcmd="steam://url/SupportAppPage" }
-		DATABASE						{	text="DATABASE"	}						
-		WOW								{	text="WOW"}
-		WOW								{	text="WOW"}
-		}
+
 		
 
 	Window [$OSX]
