@@ -16,10 +16,7 @@
 		// Header text labels
 		gametitleheader { controlname="CDetailsGameTitleHeaderPanel" zpos="2" }
 		gamesubheader { controlname="CDetailsGameSubHeaderPanel" zpos="2" }
-
-		gamesubheaderright { controlname="CDetailsGameSubHeaderRightPanel" zpos="2" }
-
-		// Right column links
+		
 		linkslabel { controlname="Label" labeltext="#Steam_Links" style="rightcolumnheadertext" } 
 		sendguestpasslink { controlname="URLLabel" labeltext="#steam_send_guestpass" style="rightcolumnlink" tabposition=7 command="SendGuestPass" }
 		achievementslink { controlname="URLLabel" labeltext="#Steam_Achievements" style="rightcolumnlink" }
@@ -78,7 +75,6 @@
 			inset="0 0 0 1"
 			render
 						{
-
 						}
 			render_bg
 			{
@@ -310,9 +306,7 @@
 
 		// Header text
 		place 	{ control=gametitleheader region=headertext dir=down height=46 }
-		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down height=42 }
-
-		place	{ control=gamesubheaderright start=gamesubheader region=headertext margin-right=150 align=right height=42 }
+		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down margin-top=10 }
 
 		//		Buttons and links on the right
 		place	

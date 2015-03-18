@@ -3,18 +3,14 @@
 	controls
 	{
 		subheaderlabels { controlname="CDetailsSubHeaderLabelsPanel" }
-
-		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=2 command="RunGameAction" }
-		installbutton { controlname="Button" labeltext="#Steam_Install" style="detailsInstallButton" tabposition=3 command="RunGameAction" }
-		preloadbutton { controlname="Button" labeltext="#Steam_Preload" style="detailsInstallbutton" tabposition=4 command="RunGameAction" }
-		activateguestpassbutton { controlname="Button" labeltext="#Steam_ActivateGuestPass" style="detailsbutton" tabposition=5 command="RunGameAction" }
-		purchasebutton { controlname="Button" labeltext="#Steam_Purchase" style="detailsBuyButton" tabposition=6 command="RunGameAction" }
+		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
+		clientlist { controlname="ClientListButton" labeltext="" style="ClientListButton" tabposition=2 zpos=100 }
 	}
 
 	colors
 	{
 		GameDetailsSubHeader.HorizontalSpacing=10
-		GameDetailsSubHeader.VerticalMargin=0
+		GameDetailsSubHeader.VerticalMargin=10
 	}
 
 	styles
@@ -22,7 +18,74 @@
 		CDetailsGameSubHeaderPanel
 		{
 			bgcolor=DarkDialogBGTransparent
+			}
+
+
+
+
+		ClientListButton
+		{
+			inset="20 0 0 0"
+			// minimum-width=20
+			// minimum-height set by code to match actual height of Launch button
+			// Do not set either minimum-width or -height here or it will override the code and the layout will break
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				//0="gradient( x0+2, y0+1, x1, y1-1, launch1, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
 		}
+
+		ClientListButton:hover
+		{
+		  inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				//0="gradient( x0+2, y0+1, x1, y1-1, launch0, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}	
+		
+		ClientListButton:active
+		{
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				//0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}	
+				
+		ClientListButton:selected
+		{
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				//0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}	
+
 
 		DetailsButton
 		{   
@@ -36,6 +99,9 @@
 
 			render_bg
 			{
+
+
+
 
 			}	
 		}
@@ -53,6 +119,8 @@
 			render_bg
 			{
 
+
+
 			}	
 		}
 		
@@ -68,6 +136,8 @@
 			
 			render_bg
 			{
+
+
 
 			}	
 		}
@@ -89,6 +159,9 @@
 			render_bg
 			{
 
+
+
+
 			}	
 		}
 	
@@ -101,6 +174,7 @@
 			textcolor="TextHover"
 			font-style=uppercase
 			bgcolor=grey
+
 			render
 			{
 				1="image( x0 + 6, y0 + 3, x1, y1, graphics/icon_play_hover )"
@@ -108,11 +182,15 @@
 			render_bg
 			{
 
+
+
+
 			}	
 		}
 		
 		 DetailsLaunchButton:Selected
     {
+
       inset="23 0 0 0"
 			font-family=basefont
 			font-size=11
@@ -129,6 +207,11 @@
 
       }
     }
+
+
+
+
+
 		
 		
 		DetailsLaunchButton:Active
@@ -148,10 +231,13 @@
 			render_bg
 			{
 
+
+
 			}	
 		}
 		
 		
+
 		DetailsInstallButton
 		{  
 			
@@ -168,6 +254,9 @@
 			}
 			render_bg
 			{
+
+
+
 
 			}	
 		}
@@ -189,11 +278,14 @@
 			render_bg
 			{
 
+
+
 			}	
 		}
 		
 		DetailsInstallButton:Selected
     {
+
       inset="23 0 0 0"
 			font-family=basefont
 			font-size=11
@@ -211,6 +303,11 @@
 
       }
     }
+
+
+
+
+
 		
 		
 		DetailsInstallButton:Active
@@ -229,6 +326,8 @@
 			
 			render_bg
 			{
+
+
 
 			}	
 		}
@@ -251,6 +350,8 @@
 			render_bg
 			{
 
+
+
 			}	
 		}
 		
@@ -270,6 +371,9 @@
 			}
 			render_bg
 			{
+
+
+
 
 			}	
 		}
@@ -291,12 +395,15 @@
 			render_bg
 			{
 
+
+
 			}	
 		}
 		
 		
 		DetailsBuyButton:Selected
     {
+
       inset="23 0 0 0"
 			font-family=basefont
 			font-size=11
@@ -316,6 +423,11 @@
 		
 	
 		
+
+
+
+
+
 	}
 
 	layout
