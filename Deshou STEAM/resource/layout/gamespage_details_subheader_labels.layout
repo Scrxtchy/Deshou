@@ -29,7 +29,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=11
-			textcolor=GameDetailsRed
+			textcolor=Text
 		}
 
 		headertext-green
@@ -38,7 +38,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=11
-			textcolor=GameDetailsGreen
+			textcolor=Text
 		}
 
 		headertext-blue
@@ -47,7 +47,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=11
-			textcolor=GameDetailsBlue
+			textcolor=Text
 		}
 
 		valuetext
