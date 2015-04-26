@@ -119,7 +119,8 @@ steam.styles
     
     TitleBar="baseBackground"
     TitleBarFocus="baseBackground"
-    
+	
+    Focus0="grey" // used in window frame borders
     Focus=grey  		// background color of any selected menu or list item
     Focus2="grey"		// background color of view buttons and anything else in focus that needs more 'punch'
     Focus3="black"		// background color of highlighted friends 
