@@ -47,8 +47,7 @@
 		{
 			render_bg
 			{
-				// 0="gradient( x0, y0 + 18, x1, y1, DialogBG, 
-PropertySheetBG )"
+				// 0="gradient( x0, y0 + 18, x1, y1, DialogBG, PropertySheetBG )"
 			}
 		}
 
