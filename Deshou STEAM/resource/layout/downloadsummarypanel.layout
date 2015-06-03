@@ -347,7 +347,6 @@
 		{
 			bgcolor   "none"
 			textcolor "highlight5"
-			inset="0 3 3 3"
 			render_bg
 			{
 				// no background

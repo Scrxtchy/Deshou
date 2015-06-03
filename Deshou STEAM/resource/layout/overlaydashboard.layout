@@ -53,6 +53,7 @@
 	
 	backgroundOverlayTop="black128"
 
+	Highlight2="80 154 191 255" 
 	}
 	
 	styles
@@ -87,6 +88,10 @@
 			font-size=43
 			
 			textcolor=text
+		}
+		detailsboxtitle
+		{
+				textcolor=Highlight2
 		}
 				
 		OverlayURLLabel
