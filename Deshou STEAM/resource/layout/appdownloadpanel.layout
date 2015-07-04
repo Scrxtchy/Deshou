@@ -24,6 +24,8 @@
 		timeremainingfield	{ controlname="Label"	labelText="%time_remaining%"  style="label" group="ShowWhileDownloading" }
 		timecompletedlabel	{ controlname="Label"	labelText="#steam_downloads_timecompleted" style="label2" group="ShowWhenComplete" }
 		timecompletedfield	{ controlname="Label"	labelText="%time_completed%"  style="label" group="ShowWhenComplete" }
+		pausereasonlabel	{ controlname="Label"	labelText="#steam_downloads_pausedreason" style="label2" group="ShowWhenPaused" }
+		pausereasonfield	{ controlname="Label"	labelText="" style="label3" group="ShowWhenPaused" }
 		
 
 		// right column
@@ -118,6 +120,15 @@
 			padding-top		"0"
 			font-style="uppercase"
 
+		}
+		
+		label3
+		{
+			bgcolor			none
+			font-size		"11"
+			textcolor		"label"
+			padding-top		"0"
+			font-style="uppercase"
 		}
 
 		ModuleHeading
@@ -368,7 +379,7 @@
 
 	layout
 	{
-		region	{ name="bottom" width="1262" y=75 height=60 width=400 }
+		region	{ name="bottom" y=75 height=60 width=400 }
 		
 		region { name="column1" x=0 width=200 }
 		region { name="column2" x=210 width=max }
@@ -376,7 +387,9 @@
 		region { name="column4" x=700 width=max overflow=allow-horizontal }
 		
 		// left column
-		place { control="gameimage" region="column1" margin-left=0 margin-top=16 width=200 height=85 }
+		place { control="spacer" }
+		place { control="gameimage" start=spacer dir down margin-left=8 width=192 height=85 }
+		place { control="workshopbanner" margin-left=8 margin-top=82 width=192 height=26 } 
 		
 		// left-mid column
 		place { control="namelabel" region="column2" margin-top=16 margin-left=0 }
@@ -386,14 +399,15 @@
 
 		// right-mid column
 		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=43 spacing=6 }
-		place { control="starttimelabel,starttimefield" region="column3" dir="right" align=top spacing=6 margin-top=63 x=0 }
+		place { control="starttimelabel,starttimefield" 				region="column3" x=0 align=top margin-top=63 spacing=6 }
 		place { control="timecompletedlabel,timecompletedfield" region="column3" x=0 align=top margin-top=63 spacing=6 }
+		place { control="pausereasonlabel,pausereasonfield" 		region="column3" x=0 align=top margin-top=63 spacing=6 }
 		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=83 spacing=6 }
 				
 		// right column
-		place { control="updatetypelabel" region="column4" dir=down spacing=10 margin-top=22 align=right	region=top margin-right=16 }
-		place { control="topofqueuebutton,removefromqueuebutton" region="column4" height=22 width=26 dir=right spacing=10 margin-top=50 align=right	region=top margin-right=16 }
-		place { control="newslink" region="column4" dir=down spacing=10 margin-top=80 align=right	region=top margin-right=16 }
+		place { control="updatetypelabel" region="column4" spacing=10 margin-top=22 align=right margin-right=16 }
+		place { control="topofqueuebutton,removefromqueuebutton" region="column4" height=22 width=26 dir=right spacing=10 margin-top=50 align=right margin-right=16 }
+		place { control="newslink" region="column4" spacing=10 margin-top=80 align=right	margin-right=16 }
 
 		// put the buttons along the bottom
 		

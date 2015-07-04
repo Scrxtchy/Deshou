@@ -13,7 +13,7 @@
 		
 
 
-		"Divider1" { ControlName="Divider" }
+		"Divider1" { ControlName="Divider" group="HideWHideWhenUnavailable" }
 		
 		"PermissionsHeader" { ControlName="Label" fieldName="PermissionsHeader" labelText="#Steam_Settings_Broadcast_PermissionsHeader" group="HideWhenUnavailable" }
 		"Permissions" { ControlName="ComboBox" fieldName="Permissions" editable="0" group="HideWhenUnavailable" }			
