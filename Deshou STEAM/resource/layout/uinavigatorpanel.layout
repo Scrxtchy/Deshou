@@ -842,8 +842,8 @@
  	
 		place { control="library_search"  width=112 }	
 
-		place [!$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=13 }
-		place  [$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=12 }
+		place [!$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=12 }
+		place  [$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=11 }
 		
 		region { name="dropdown" width=200 x=82 y=55 height=20 }
 		
