@@ -255,8 +255,8 @@ steam.styles
     
     MessageBox.ButtonHeight		24
     
-    TextEntry.IMEBGColor        "Text"
-    TextEntry.IMEFGColor        "black"
+    TextEntry.IMEBGColor        "baseBackground"
+    TextEntry.IMEFGColor        "text"
     
 
     // Friends List colors
@@ -1009,7 +1009,6 @@ steam.styles
     {
 		textcolor=Highlight5
 		bgcolor=none
-		inset="0 -3 0 0"
 		render_bg 
 		{
 
@@ -1499,7 +1498,7 @@ steam.styles
       
     ListPanelSectionHeader
     {     
-		inset="0 0 0 0"
+		inset="2 0 0 0"
 		textcolor=label
 		font-style="uppercase"
 		render_bg
@@ -2738,6 +2737,15 @@ steam.styles
       font-size=11
       font-weight=normal
       font-style=underline
+    }
+    
+    URLDownloadLabel
+    {
+      font-family=basefont
+      font-size=11
+      font-weight=normal
+      textcolor="labelfocus"
+      font-style=uppercase
     }
     
    	URLLabel:Hover
