@@ -269,7 +269,7 @@
 	layout
 	{
 		region	{ name="list" y=2 x=1 width=275 height=max margin-bottom=0 }
-		region	{ name="details" y=1 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1}
+		region	{ name="details" y=45 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1}
 		region	{ name="headertext" region=details y=40 x=5 width=max height=max margin-right=20 }
 		region	{ name="rightcolumn" region=details y=159 height=max width=1156 margin-right=0 margin-top=1 margin-bottom=1 overflow=allow-vertical }
 		region  { name="detailsbody" region=details y=159 width=1156 margin-right=160 overflow=allow-vertical }
@@ -278,7 +278,7 @@
 		place	{ control=emptylisttext x=0 y=0 width=max height=max margin=10 }
 
 		// Games list on left
-		place 	{ control=GamesList region=list width=275 height=max margin=0 }
+		place 	{ control=GamesList region=list width=275 height=max margin=0 y=80 }
 		
 		// Body contents
 		place 	
