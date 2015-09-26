@@ -278,7 +278,7 @@
 		place	{ control=emptylisttext x=0 y=0 width=max height=max margin=10 }
 
 		// Games list on left
-		place 	{ control=GamesList region=list width=275 height=max margin=0 y=60 }
+		place 	{ control=GamesList region=list width=275 height=max margin=0 y=80 }
 		
 		// Body contents
 		place 	
