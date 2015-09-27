@@ -65,7 +65,7 @@
 		emptylisttext
 		{
 			textcolor="Text"
-			font-size="11"
+			font-size=11
 			render_bg {}
 		}
 
@@ -100,14 +100,14 @@
 		"GamesPage_Details ListPanelInterior"
 		{
 			bgcolor="none"
-			inset="1 1 0 0"
+			inset="0 1 0 0"
 			render {}
 			render_bg {} 
 		}
 		
 		"GamesPage_Details ListPanelInterior:scrollbar"
 			{     
-			inset="1 1 -2 0"
+			inset="0 1 -2 0"
 			bgcolor=none
 			
 			render_bg {}
@@ -120,7 +120,7 @@
 			font-style="uppercase"
 			render_bg
 			{
-				//0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, buttonface2, none  )"
+				//0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, propertysheetbg, Friends.ListHeaderFadeOut  )"
 			}    
 		} 
 
@@ -161,7 +161,7 @@
           		5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
         		}   
         		render_bg {
-        			//1="fill( x0 + 1, y0, x1 - 1, y1, none )"
+        		//	1="fill( x0 + 1, y0, x1 - 1, y1, none )"
         		}
 		}
 		
@@ -269,31 +269,30 @@
 	layout
 	{
 		region	{ name="list" y=2 x=1 width=275 height=max margin-bottom=0 }
-		region	{ name="details" y=45 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1}
-		region	{ name="headertext" region=details y=40 x=5 width=max height=max margin-right=20 }
-		region	{ name="rightcolumn" region=details y=159 height=max width=1156 margin-right=0 margin-top=1 margin-bottom=1 overflow=allow-vertical }
-		region  { name="detailsbody" region=details y=159 width=1156 margin-right=160 overflow=allow-vertical }
+		region	{ name="details" y=1 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1}
+		region	{ name="headertext" region=details y=20 x=5 width=max height=max margin-right=20 }
+		region	{ name="rightcolumn" region=details y=171 height=max width=1156 margin-right=0 margin-top=1 margin-bottom=1 overflow=allow-vertical }
+		region  { name="detailsbody" region=details y=174 height=max width=1156 margin-right=160 overflow=allow-vertical }
 
 		// Empty list text, which goes across regions
 		place	{ control=emptylisttext x=0 y=0 width=max height=max margin=10 }
 
 		// Games list on left
-		place 	{ control=GamesList region=list width=275 height=max margin=0 y=80 }
+		place 	{ control=GamesList region=list width=275 height=max margin=0 }
 		
 		// Body contents
-		place 	
+		place 
 		{ 
-			control=welcomedetails,friendsdetails,turnnotifications,achievementsdetails,dlcdetails,clouddetails,communityfilesdetails,newsdetails,nonsteamdetails,screenshotsdetails
+			control=welcomedetails,turnnotifications,friendsdetails,achievementsdetails,dlcdetails,clouddetails,communityfilesdetails,newsdetails,nonsteamdetails,screenshotsdetails
 			region=detailsbody
 			dir=down
 			width=max
 			margin-right=10
-			margin-top=25
+			margin-top=0
 			margin-left=5
 			spacing=10
 			margin-bottom=10 
-
-			}
+		}
 
 		
 		// Details border
@@ -307,16 +306,15 @@
 		// Header text
 		place 	{ control=gametitleheader region=headertext dir=down height=46 }
 		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down margin-top=10 }
-
-		//		Buttons and links on the right
+		
+		// Buttons and links on the right
 		place	
 		{ 
 			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
 			region=rightcolumn 
 			dir=down 
 			width=150 
-			margin=10
-			margin-top=20
+			margin=0
 			align=right
 			spacing=5 
 
