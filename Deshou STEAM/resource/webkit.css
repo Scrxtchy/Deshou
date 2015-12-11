@@ -1,8 +1,367 @@
-body{
+/* Network Restyle - Copy into Firefox StyleEditor for work*/
+
+body, .home_cluster_ctn, .spotlight_content, .home_tab_bg, .home_ctn,
+/*Store Dropdown*/body.v6 .store_nav .popup_block_new .popup_body, body.v6 #footer_nav .popup_block_new .popup_body,
+/*Black Seperators */body.v6 .page_content_ctn.dark, .more_content_title, .more_content_title > span,
+/*Footer*/body.v6 #footer
+ {
     background: #1B1B1B !important;
+	background-image: unset !important;
 	}
+
+.dailydeal_ctn, .btnv6_blue_hoverfade, #store_nav_area .store_nav_bg, .home_btn:hover, .home_btn,
+/*hr*/body.v6 .store_nav .popup_menu .hr, body.v6 #footer_nav .popup_menu .hr,
+/*wishlist*/.store_header_btn_gray {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/*Customise*/ 
+.home_actions_ctn {
+	display: none !important;
+}
+
+/*h2*/
+body.v6 h2 a, body.v6 h2, 
+/*Update Details */ .home_smallcap .recently_updated_announcement_link,
+/*buttons css colour*/ .btnv6_blue_hoverfade,
+/*gutter header*/ .gutter_header
+{
+	color: #fff !important;
+	}
+
+.store_nav .tab > span,
+/*Dropdown Subtitle */body.v6 .store_nav .popup_menu_subheader, body.v6 #footer_nav .popup_menu_subheader
+{
+	color: #C7D5E0 !important;
+}
+
+/* Gradient Hovers */	
+.home_tab, .home_tab .tab_content:hover, .home_tab .tab_content, .main_cluster_content .home_btn.home_customize_btn:hover, a.home_block_footer_btn:hover, .home_btn:hover, .tab_page_link_prev a:hover, .tab_page_link_next a:hover, .store_nav .tab:hover > span, .store_nav .tab:hover, .store_nav .tab.focus > span, .store_nav .tab.focus, .btnv6_blue_hoverfade:hover, .store_header_btn_gray a:hover, .home_btn {
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: #fff !important;
+}
+
+/*Spotlight border*/
+.spotlight_scroll_ctn {
+	background: none !important;
+}
+
+/*Store Pulldown */
+.store_nav .tab > span.pulldown > span {
+	background-image: url( 'https://steamstore-a.akamaihd.net/public/images/v6/btn_arrow_down_padded_white.png' ) !important;
+}
+
+/* Store Genre */
+.home_page_gutter_block {
+	background: none !important;
+	border-color: transparent !important;
+}
+
+.home_page_gutter_movies {
+    border-top: none !important;
+}
+
+/*Remove Recomendation Callout */
+#content_callout {
+  display:none !important;
+}
+
+/* Reccomendation arrows */
+.ico16 { /* ##PLZ FIX##*/
+	background-position: -304px 16px;
+}
+/*Slider arrows */
+.slider_left span  {
+	background-position: -18px -7px !important;
+}
+.slider_right span {
+	background-position: -9px -7px !important;
+}
+
+/* Demand Tabs */
+
+
+/* Gabe Sales */
+.discount_block .discount_pct, .discount_pct {
+    color: #000 !important;
+    background-color: #6E6E6E !important;
+}
+
+/*Remove Curator Bullshit*/
+.apps_recommended_by_curators_ctn, #apps_recommended_by_curators, .steam_curators_ctn,
+/*ProductPages Curator */ .steam_curators_block { 
+	display: none !important; 
+    }
 	
-    
+
+
+
+/*Community Hubs*/
+.apphub_background 
+   {
+  background: #1B1B1B !important;
+	background-image: unset !important;
+	}
+.apphub_Card {	
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.visibilityNotification {	
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.apphub_HeaderBottomBG {
+	background: none !important;
+}
+/*Back to top */
+.apphub_BackToTopButton {
+	background-image: unset !important;
+	background-color: rgba(0,0,0,0.2) !important;
+}
+
+/*Search*/
+
+input.community_home_search_players_input, .community_home_search_players_image, input.community_home_search_app_input, .community_home_search_apps_image, .profileFriendSearchBox {
+	background-color: transparent !important;
+}  
+.community_home_search_players, .community_home_search_apps {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+#profileFriendSearchBox {
+  border:none !important;
+}
+
+input[type="text"], input[type="password"], select {
+/*box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);*/
+}
+
+/* new content counter */
+.new_items_num, .new_items_text {
+	color: #fff;
+	
+}
+
+/* Blotter */
+
+/*App Picker*/
+
+.blotter_appselect {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	background-image: unset !important;
+}
+
+.blotter_appselect_options {
+	background-color: #1b1b1b !important;
+border: 1px solid transparent !important;
+}
+#blotter_appselect_app_filter {
+	border: 1px solid #1b1b1b;
+	background-color: rgba(0, 0, 0, 0.2)
+}
+
+/*Post button*/
+.btn_grey_white_innerfade > span, .btn_grey_white_innerfade {
+    background: rgba(0,0,0,0.2) !important;
+}
+
+/*Friends online count*/
+.profile_link_block_text_friends {
+	color: #fff !important;
+}
+
+/*item backgrounds*/
+.blotter_block {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* annoucement title text*/.blotter_group_announcement_headline, .blotter_group_announcement_headline a, .blotter_group_announcement_headline a:visited, .blotter_group_announcement_headline a:active,
+/*Screenshot title*/.blotter_screenshot_title {
+	color: #fff !important;
+}
+
+.blotter_group_announcement_header, .blotter_author_block, .blotter_comment_thread {
+	border: none !important;
+}
+
+/*DateSplit*/
+.blotter_day_header_date {
+	color: #fff !important;
+}
+.blotter_day_header_divider {
+	background-color: #fff !important;
+}
+
+/*Avatar Borders*/
+.blotter_playerAvatarSmall {
+	border-radius: none !important;
+}
+
+.blotter_playerAvatarSmall.online, .playerAvatar.online, .friend_block_holder.friend_status_online .friend_block_avatar, .friend_activity.friend_status_online .friend_block_avatar, .appHubIconHolder.online, .avatar_block_status_online, .playerAvatar.online img, .friend_status_online .friend_block_avatar img, .appHubIconHolder.online img, .avatar_block_status_online img {
+    background-color: unset !important;
+  background: rgb(204,221,238) !important;
+}
+
+.blotter_playerAvatarSmall.in-game, .playerAvatar.in-game img, .friend_status_in-game .friend_block_avatar img, .appHubIconHolder.in-game img, .avatar_block_status_in-game img, .playerAvatar.in-game, .friend_block_holder.friend_status_in-game .friend_block_avatar, .friend_activity.friend_status_in-game .friend_block_avatar, .appHubIconHolder.in-game, .avatar_block_status_in-game {
+	background-color: unset !important;
+  background: rgb(102,119,136) !important;
+}
+.blotter_playerAvatarSmall.offline, .playerAvatar.offline img, .friend_status_offline .friend_block_avatar img, .appHubIconHolder.offline img, .avatar_block_status_offline img, .playerAvatar.offline, .friend_block_holder.friend_status_offline .friend_block_avatar, .friend_activity.friend_status_offline .friend_block_avatar, .appHubIconHolder.offline, .avatar_block_status_offline, .appHubIconHolder.ignored {
+    background-color: unset !important;
+  background: rgb(72,77,81) !important;
+}
+
+/* Status Text Colour*/
+.persona.in-game, a.persona.in-game, .persona.in-game a, .friend_status_in-game, .friend_status_in-game div, .friend_status_in-game a {
+	color: rgb(102,119,136) !important;
+}
+
+.persona.online, a.persona.online, .persona.online a, .friend_status_online, .friend_status_online div, .friend_status_online a {
+	color: rgb(204,221,238) !important;
+}
+
+.persona, a.persona, .persona a, .friend_status_offline, .friend_status_offline div, .friend_status_offline a {
+	color: rgb(72,77,81) !important;
+}
+
+/* Miniprofile */
+.miniprofile_top {
+	background: unset !important;
+	background-color: #1b1b1b !important;
+	border-bottom-color: #1B1B1B !important;
+}
+
+.miniprofile_favorite_badge {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.miniprofile_ingame{
+    background: #1B1B1B none repeat scroll 0% 0%;
+}
+
+.miniprofile_arrow.left {
+	border-right: 8px solid #1b1b1b !important;
+}
+
+.miniprofile_arrow.right {
+	border-left: 8px solid #1b1b1b !important;
+}
+
+/*Popup Window Community*/
+#modalContent.modal_frame {
+	border: unset !important;
+}
+
+#modalContentTitleBar {
+	background-color: #1b1b1b !important;
+}
+
+/*Screenshot Page*/
+.screenshotDescription {
+	color: #fff !important;
+}
+
+/*comment box*/
+.commentthread_area .commentthread_header {
+    background-color: rgba(0,0,0,0.2) !important;
+}
+.commentthread_entry_quotebox {
+	border: none !important;
+	border-radius: unset !important;
+	background-color: rgba(0,0,0,0.2);
+}
+
+
+/* Author Block */
+.creatorsBlock .friendBlock_offline, .creatorsBlock .friendBlock_online, .creatorsBlock .friendBlock_in-game, .creatorsBlock .friendBlock_ignored {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+#ig_bottom .sidebar .panel, #ig_bottom .sidebar .detailPanel {
+    background: rgba(0,0,0,0.2) !important;
+}
+
+.stats_table tr > td:first-child {
+	color: #fff;
+}
+
+#profileBlock > .detailBox {
+background: none !important;
+}
+
+/*Emoticons*/
+
+.emoticon_popup {
+	background-color: #1B1B1B !important;
+}
+
+/*Genderal Footer*/body.flat_page #footer, body.headerless_page #footer,
+/*Hack to remove steam footer on steam*/
+#BG_bottom + center > #footer {
+  opacity: 0 !important;
+}
+#footer .small_footer {
+	opacity: 0 !important;
+}
+
+/* Profile
+
+/* Profile Background */
+/* Header*/.profile_header_bg, .profile_background_overlay_content, .profile_header_badge, .profile_customization, 
+/* Showcase */ .myworkshop_showcase_header.guides, .profile_leftcol_header, .game_info_achievement.plus_more, .showcase_achievement.plus_more, 
+/* Recent Games */ .recent_game, .recent_game .game_info_stats, .favoritegame_showcase .game_info_stats, .game_info_stats_rule, .achievement_progress_bar_ctn, 
+/* Badge */ .game_info_badge_border,
+/* Comments */ .profile_comment_area .commentthread_header{
+	background-image: unset !important;
+    background-color: rgba(0,0,0,0.4) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.profile_header_bg_texture, .screenshot_showcase_smallscreenshot.screenshot_count, .newmodal_content {
+  background: none !important;
+}
+
+/*More Info*/
+
+.newmodal_header_border {
+	background: #1B1B1B !important;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border: none !important;
+}
+
+.newmodal_header {
+	background: #1B1B1B !important;
+	line-height: unset !important;
+	height: unset !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+.newmodal_content_border {
+    background: black !important;
+    padding: none !important;
+}
+
+.newmodal_close {
+	display: none !important;
+}
+
+
+
+/* Account Pages */
+/* Main Header */ .account_header_line,
+/* Wallet*/.wallet_history_table tr:nth-child(2n+1) {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* links */
+.account_manage_link {
+	color: #FFF !important;
+}
+
+/*Chromium*/
+	    
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
 	max-width: 9px;
@@ -39,12 +398,12 @@ body{
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #4E4E4E;
 }
-
+/*
 ::-webkit-scrollbar-thumb {
-	/*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD9JREFUeNpi/P//PwMhwAQibly/9h8fzUi0SefPnfuPjybepKNHjvxHpQ+j0MSbtGvXzv/I9G44vYN4kwACDAA7RESWY5qxTAAAAABJRU5ErkJggg==);
-*/
-	}
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD9JREFUeNpi/P//PwMhwAQibly/9h8fzUi0SefPnfuPjybepKNHjvxHpQ+j0MSbtGvXzv/I9G44vYN4kwACDAA7RESWY5qxTAAAAABJRU5ErkJggg==);
 
+	}
+*/
 ::-webkit-scrollbar-button:vertical:decrement {
 
 	height: 0px;
@@ -75,3 +434,4 @@ body{
 	/* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJCAYAAAD6reaeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAENJREFUeNpiSE6I+w8EDMiYycfXnyElMf4/AxJgAhHoEkwwBrIEE7I2mASK4JbNGxnmzF/IyIQuANeOLAAG2NwJEGAAuVg0Qtlxn1kAAAAASUVORK5CYII=);
 	}
 */
+}
