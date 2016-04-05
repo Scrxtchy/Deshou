@@ -10,4 +10,4 @@ https://github.com/Scrxtchy/Deshou/tree/deshou-colour/Deshou%20STEAM/resource/st
 
 ## Deshou STEAM  
 Uses HaxrCorp S8.  
-Ensure that DirectWire is disabled before chaning the user interface
+Ensure that DirectWrite is disabled before chaning the user interface
