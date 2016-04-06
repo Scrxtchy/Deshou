@@ -11,11 +11,11 @@ steam.styles
    baseLight="252 252 252 255"
    baseDark="110 110 110 255"
    baseHighlight="204 221 238 255"
-   baseOnline="204 221 238 255"
-   baseInGame="102 119 136 255"
+   baseOnline="84 165 196 255"
+   baseInGame="144 186 60 255"
    baseDisabled="72 77 81 255"
 
-   basefont="HaxrCorp S8"
+   basefont="HaxrCorp S9"
    basefont="HaxrCorpTTF" [$OSX]
 
    // IF THIS WORKED, THESE WOULD BE THE TWO FONT SIZES TO EDIT!
@@ -28,8 +28,8 @@ steam.styles
    DarkClientBGTransparent="27 27 27 19"
 
    DarkDialogBGTransparent="27 27 27 170"
-   InGameColour192="169 141 155 192"
-   OnlineColour192="217 191 194 192"
+   InGameColour192="144 186 60 255"
+   OnlineColour192="84 165 196 255"
 
    black128="51 51 51 128"
    DarkImageOverlay="51 51 51 80"
@@ -46,7 +46,7 @@ steam.styles
 
     black="baseBackground"
     almostBlack="black"
-    white="baseLight"
+    white="255 255 255 255"
     grey="baseDark"
     none="0 0 0 0"
     yellow="baseLight"
@@ -60,7 +60,7 @@ steam.styles
     darkpurple="baseLight"
 
     InGameColour="baseInGame"
-    OnlineColour="baseHighlight"
+    OnlineColour="baseOnline"
 
 
 
@@ -90,13 +90,13 @@ steam.styles
     ButtonBorderFocus=grey
 
     
-    Text="baseLight"
+    Text="254 254 254 255"
     Text2="baseDisabled"
     TextDisabled="baseDisabled"
     TextHover=Text
-    TextSelected=Text
-    TextentrySelected="baseLight" // color of any selected text
-    TextSelectedBG=grey // background color of any selected text 
+    TextSelected="white"
+    TextentrySelected="white" // color of any selected text
+    TextSelectedBG="baseOnline" // background color of any selected text 
     TextGlowHover="black"
     TextGlowSelected=grey
     TextGlowHoverSm="black"
@@ -272,7 +272,7 @@ steam.styles
   
     ChatDialog.URLColor       "text"
     ChatOwnTextColor        "Label"
-	ChatDialog.HistoryColor	"TextDisabled"
+	  ChatDialog.HistoryColor	"TextDisabled"
     ChatGradientTop         "black"
     ChatGradientBottom        "black"
     
@@ -459,13 +459,17 @@ steam.styles
             
     CFriendPanel
     {
-      inset="0 2 0 0"
+      inset="0 0 0 0"
       bgcolor=none
       font-family=basefont
       font-size=11
       font-size=11 [$OSX]
       font-weight=normal
       textcolor="label"
+    }
+    CFriendPanel:hover
+    {
+      bgcolor="255 255 255 25"
     }
 
     
@@ -3095,84 +3099,84 @@ steam.styles
 	friends_chat_text
 	{
 		textcolor="text"
-		selectedtextcolor="TextentrySelected"	
-		SelectedBgColor="focus"
+		selectedtextcolor="TextSelected"	
+		SelectedBgColor="TextSelectedBG"
 		font-size=11
 	}
 	
-	friends_chat_text_selfs
+	friends_chat_text_self
 	{
-		textcolor="ChatOwnTextColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		textcolor="text"
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="TextSelectedBG"
 		font-size=11
 	}
 
 	friends_chat_history
 	{
 		textcolor="ChatDialog.HistoryColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="TextSelectedBG"
 		font-size=11
 	}
 	
 	friends_chat_event
 	{
-		textcolor="Text"
-		font-size=11
-		selectedtextcolor="TextentrySelected"
-		selectedbgcolor="focus"
+    textcolor="text"
+    selectedtextcolor="TextSelected"  
+    selectedbgcolor="TextSelectedBG"
+    font-size=11
 	}
 
 	friends_chat_bright_event
 	{
-		textcolor="text"
-		selectedtextcolor="TextentrySelected"
-		font-size=11
+    textcolor="text"
+    selectedtextcolor="TextSelected"  
+    selectedbgcolor="TextSelectedBG"
+    font-size=11
 		font-weight=normal
 	}
 
 	friends_chat_url
 	{
 		textcolor="text"
-   		SelectedBgColor="focus"
 		font-style=underline
 		font-size=11
-		selectedtextcolor="TextentrySelected"
-		selectedbgcolor="focus"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="TextSelectedBG"
 	}
 	
 	friends_chat_name_ingame
 	{
 		textcolor="Friends.InGameColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="TextSelectedBG"
 		font-size=11
 
 	}
 	
 	friends_chat_self
 	{
-		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
-		font-size=11
+    textcolor="text"
+    selectedtextcolor="TextSelected"  
+    selectedbgcolor="TextSelectedBG"
+    font-size=11
 	}
 	
 	friends_chat_name
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="TextSelectedBG"
 		font-size=11
 	}
 	
 	friends_chat_accountid
 	{
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
-		textcolor="text"
-		font-size=11
+    textcolor="text"
+    selectedtextcolor="TextSelected"  
+    selectedbgcolor="TextSelectedBG"
+    font-size=11
 	}
 	
 	friends_chat_securitylink
