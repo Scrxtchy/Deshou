@@ -121,7 +121,7 @@ steam.styles
     TitleBarFocus="baseBackground"
 	
     Focus0="grey" // used in window frame borders
-    Focus=grey  		// background color of any selected menu or list item
+    Focus="grey"  		// background color of any selected menu or list item
     Focus2="grey"		// background color of view buttons and anything else in focus that needs more 'punch'
     Focus3="black"		// background color of highlighted friends 
     FocusGrid="black"  	// background color of any grid item
@@ -1983,6 +1983,7 @@ steam.styles
 	{
 		font-size=11
 		font-style=normal
+    textcolor="baseInGame"
 	}
 
 	ScrollBar
@@ -3077,7 +3078,7 @@ steam.styles
 		font-size=11
 		font-family="basefont" [$OSX]
       	font-size=11 [$OSX]
-		selectedtextcolor="TextSelected"
+		selectedtextcolor="Friends.OnlineColor"
 		selectedbgcolor="Focus"
 	}
 	
@@ -3088,31 +3089,31 @@ steam.styles
 		font-family="basefont" [$OSX]
       	font-size=11 [$OSX]
 	    textcolor="text"
-		selectedtextcolor="TextSelected"	
+		selectedtextcolor="Friends.OnlineColor"	
 		selectedbgcolor="Focus"
 	}
 	
 	friends_chat_text
 	{
 		textcolor="text"
-		selectedtextcolor="TextentrySelected"	
-		SelectedBgColor="focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 		font-size=11
 	}
 	
-	friends_chat_text_selfs
+	friends_chat_text_self
 	{
 		textcolor="ChatOwnTextColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 		font-size=11
 	}
 
 	friends_chat_history
 	{
 		textcolor="ChatDialog.HistoryColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 		font-size=11
 	}
 	
@@ -3120,14 +3121,14 @@ steam.styles
 	{
 		textcolor="Text"
 		font-size=11
-		selectedtextcolor="TextentrySelected"
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"
+		selectedBgcolor="Friends.InGameColor"
 	}
 
 	friends_chat_bright_event
 	{
 		textcolor="text"
-		selectedtextcolor="TextentrySelected"
+		selectedtextcolor="Friends.OnlineColor"
 		font-size=11
 		font-weight=normal
 	}
@@ -3135,18 +3136,18 @@ steam.styles
 	friends_chat_url
 	{
 		textcolor="text"
-   		SelectedBgColor="focus"
+   		selectedBgcolor="Friends.InGameColor"
 		font-style=underline
 		font-size=11
-		selectedtextcolor="TextentrySelected"
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"
+		selectedBgcolor="Friends.InGameColor"
 	}
 	
 	friends_chat_name_ingame
 	{
 		textcolor="Friends.InGameColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 		font-size=11
 
 	}
@@ -3154,23 +3155,23 @@ steam.styles
 	friends_chat_self
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 		font-size=11
 	}
 	
 	friends_chat_name
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 		font-size=11
 	}
 	
 	friends_chat_accountid
 	{
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 		textcolor="text"
 		font-size=11
 	}
@@ -3183,9 +3184,35 @@ steam.styles
 		font-size=11
 		font-weight=normal
 		font-style=underline
-		selectedtextcolor="TextSelected"	
-		selectedbgcolor="Focus"
+		selectedtextcolor="Friends.OnlineColor"	
+		selectedBgcolor="Friends.InGameColor"
 	}
+	
+		CChatRoomDlg
+		{			
+			bgcolor="none"
+
+			render
+			{
+
+			}
+			render_bg
+			{
+
+			}
+
+		}
+		
+		ChatListPanel
+		{	
+		render {}
+
+		render_bg
+			{
+			//			 0="gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )"
+			}
+		}
+		
 	
 	Chat_MenuButton_withChrome
 	{
