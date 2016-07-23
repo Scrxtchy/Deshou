@@ -30,14 +30,14 @@
 
 		ConfirmTextHeader
 		{
-			textcolor="110 192 236 255"
+			textcolor="baseOnline"
 			font-size=11
 		}	
 
 		ConfirmText
 		{
-			textcolor="110 192 236 255"
-			font-size=11
+			textcolor="Text"
+			font-size=13
 		}	
 	}
 	
