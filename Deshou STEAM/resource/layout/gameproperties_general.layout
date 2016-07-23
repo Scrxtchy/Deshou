@@ -47,6 +47,12 @@
 			"labelText"		"#Overlay_SettingsEnable"
 			"Default"		"0"
 		}
+		"EnableDesktopGameTheater"
+		{
+			"ControlName"		"CheckButton"
+			"labelText"		"#Overlay_SettingsDesktopGameTheaterCheck"
+			"Default"		"0"
+		}
 		
 		"LaunchOptionsButton"
 		{
