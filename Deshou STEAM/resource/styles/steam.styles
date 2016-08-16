@@ -2891,8 +2891,52 @@ steam.styles
       bgcolor=none
       render_bg={}
       image="graphics/icon_controller_bpm_disabled"
-    }
+ }
+    
+    VRButton
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr"
+    }  
 
+	
+    VRButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_down"
+    }
+	
+    VRButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_disabled"
+    }
+    
+    VRButtonExit
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy"
+    }  
+
+
+	
+    VRButtonExit:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy_down"
+    }
+	
+    VRButtonExit:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_disabled"
+    }
 
     ForwardButton
     {
