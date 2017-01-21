@@ -9,8 +9,25 @@
 			"ControlName"		"Button"
 			style="FullscreenButton"
 			command="fullscreen"
+						tooltiptext="#tooltip_view_fullscreen" 
 		}
-		
+
+		"startvr"
+		{
+			"ControlName"		"Button"
+			style="VRButton"
+      			command="startvr"
+     			tooltiptext="#tooltip_view_vr_start" 
+		}
+    
+		"exitvr"
+		{
+			"ControlName"		"Button"
+			style="VRButtonExit"
+			command="exitvr"
+			tooltiptext="#tooltip_view_vr_exit" 
+		}
+
 		"New"
 		{
 		"ControlName" 	"URLLabel"
@@ -91,7 +108,7 @@
 			"ControlName"	"URLLabel"
 			"fieldName"		"account_balance"
 			"labelText"		""
-			"URLText"		"steam://url/StoreAccount/"
+			"URLText"		"steam://url/StoreWallet/"
 			style="AccountBalanceStyle"
 		}
 		
@@ -352,8 +369,8 @@
 			}
 		}		
 
-	
-		ClientTitle [!$OSX]
+
+					ClientTitle [!$OSX]
 		{
 			textcolor=none		
 		}
@@ -407,7 +424,7 @@
 				//1="gradient( x0, y0, x1, y1 + 18, titlebarfocus, none )" [$OSX]
 			}
 		}
-		
+
 		view_friends [!$OSX]
 		{
 			textcolor="LabelFocus"
@@ -497,6 +514,40 @@
 				//2="image( x1, y0, x1, y1, graphics/support_flag_right_hover )"
 				//3="image_scale( x0+3, y0, x1, y0+3, graphics/support_flag_top_hover )"
 				//4="image_scale( x0+3, y1, x1, y1+3, graphics/support_flag_bottom_hover )"
+			}
+		}
+
+		support_alert_ack
+		{
+			font-family=basefont
+			font-size=11
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				//0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack1 )"
+			}
+		}
+
+		support_alert_ack:hover
+		{
+			font-family=basefont
+			font-size=11
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				//0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack2 )"
 			}
 		}
 		
@@ -743,8 +794,12 @@
 			padding-right=0
 			padding-bottom=0
 		}
+    
+		VRButton
+		{
 
-
+		}
+		
 
 
 		inboxmenuitem
@@ -837,15 +892,21 @@
 		place { control="UIStatusPanel" width=max height=40 align=bottom  margin-bottom=18 }
 		
 		place [!$OSX] { control="MenuBar" align=top margin-top=5 margin-left=2 }
-		
 
-			
-		place [!$OSX] { control="account_balance, account_balance_seperator, account_URL, universe_label, fullscreen" align=right margin-top=12 margin-right=78 spacing=7 }	
-		place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
+
+		
+		place [!$OSX] { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=88 spacing=7 }	
+		place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
+		
+		place [!$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=78 margin-top=1 width=30 }
+		place [$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=8 margin-top=1 width=30 }
+
+		place [!$OSX] { control="startvr" end-right="fullscreen" y=7 align=right margin-right=6 margin-top=1 }
+		place [$OSX] { control="startvr" end-right="fullscreen" y=7 align=right margin-right=6 margin-top=1 }
 	
-		place [!$OSX] { control="fullscreen" tooltiptext="#tooltip_view_fullscreen" align=right y=7 height=0 spacing=0 margin-right=0 margin-top=1 width=0 region="bigpicture"}
-		place [$OSX] { control="fullscreen" tooltiptext="#tooltip_view_fullscreen" align=right y=7 height=0 spacing=0 margin-right=0 margin-top=1 width=0 region="bigpicture"}
-	
+		place [!$OSX] { control="exitvr" end-right="fullscreen" y=7 align=right margin-right=6 margin-top=1 }
+		place [$OSX] { control="exitvr" end-right="fullscreen" y=7 align=right margin-right=6 margin-top=1 }		
+		
 		place { control="InboxButton" align=right end-right="account_balance" margin-top=4 margin-right=16 height=26 }
 		place { control="ParentalLockButton" align=right end-right="InboxButton" margin-top=7 margin-right=10 height=23 }
 		place { control="SupportAlert" align=right end-right="ParentalLockButton" margin-top=4 margin-right=10 height=26 }

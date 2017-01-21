@@ -11,7 +11,8 @@ body, .home_cluster_ctn, .spotlight_content, .home_tab_bg, .home_ctn,
 
 .dailydeal_ctn, .btnv6_blue_hoverfade, #store_nav_area .store_nav_bg, .home_btn:hover, .home_btn,
 /*hr*/body.v6 .store_nav .popup_menu .hr, body.v6 #footer_nav .popup_menu .hr,
-/*wishlist*/.store_header_btn_gray {
+/*wishlist*/.store_header_btn_gray,
+/*Dropdown Subtitle Hover */ .popup_menu .popup_menu_item:hover, .popup_menu .popup_menu_item.focus {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -30,9 +31,10 @@ body.v6 h2 a, body.v6 h2,
 	}
 
 .store_nav .tab > span,
-/*Dropdown Subtitle */body.v6 .store_nav .popup_menu_subheader, body.v6 #footer_nav .popup_menu_subheader
+/*Dropdown Subtitle */body.v6 .store_nav .popup_menu_subheader, body.v6 #footer_nav .popup_menu_subheader, .store_nav .popup_menu .popup_menu_item,
+/*Search Items*/.search_area .popup_body .match .match_name, .search_area .popup_body .match
 {
-	color: #C7D5E0 !important;
+	color: #66c0f4 !important;
 }
 
 /* Gradient Hovers */	
