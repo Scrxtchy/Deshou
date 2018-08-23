@@ -777,9 +777,9 @@
 		{
 		font-family=basefont
 		font-size=11
-		textcolor="darkclientbg"
+		textcolor="baseDisabled"
 		font-weight=normal
-		bgcolor="html.secureurl"
+		//bgcolor="html.secureurl"
 		inset-left=4
 		inset-right=4
 		inset-top=3		
@@ -790,9 +790,9 @@
 		{
 		font-family=basefont
 		font-size=11
-		textcolor="darkclientbg"
+		textcolor="baseDisabled"
 		font-weight=normal
-		bgcolor="html.secureurl"
+		//bgcolor="html.secureurl"
 		inset-left=3
 		inset-right=4
 		inset-top=3	

@@ -115,7 +115,7 @@
 			render_bg
 		  	{
 				// background fill
-				0="fill( x0, y0, x1, y1, darkblue )"
+				0="fill( x0, y0, x1, y1, dark_blue )"
 			}
 		}
 
