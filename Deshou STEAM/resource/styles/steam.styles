@@ -15,6 +15,8 @@ steam.styles
 	 baseInGame="102 119 136 255"
 	 baseDisabled="72 77 81 255"
 
+
+
 	 basefont="HaxrCorp S8"
 	 basefont="HaxrCorpTTF" [$OSX]
 
@@ -62,7 +64,9 @@ steam.styles
 		InGameColour="baseInGame"
 		OnlineColour="baseHighlight"
 
-
+		dark_blue="baseBackground"
+		med_blue="baseBackground"
+		bg_blue="baseBackground"
 
 
 		
@@ -3315,8 +3319,8 @@ steam.styles
 
 		render_bg
 		{
-			1="image( x0+48, y0, x1, y1, graphics/glow_friendslist )"
-			2="image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )"
+			//1="image( x0+48, y0, x1, y1, graphics/glow_friendslist )"
+			1="image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )"
 		}
 	}
 
@@ -3333,8 +3337,8 @@ steam.styles
 
 		render_bg
 		{
-			1="image( x0, y0, x1, y1, graphics/glow_friendslist )"
-			2="image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"
+			//1="image( x0, y0, x1, y1, graphics/glow_friendslist )"
+			1="image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"
 		}
 	}
 
@@ -3344,8 +3348,8 @@ steam.styles
 
 		 render_bg
 		{
-			1="image( x0+48, y0, x1, y1, graphics/glow_friendslist )"
-			2="image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )"
+			//1="image( x0+48, y0, x1, y1, graphics/glow_friendslist )"
+			1="image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )"
 		}
 	}
 
